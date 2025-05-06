@@ -26,7 +26,7 @@ jobs:
 
     - name: Run model development
       run: |
-        python Model.py || { echo "Model development failed"; cat Model.py; exit 1; }
+        python model.py || { echo "Model development failed"; cat model.py; exit 1; }
 
     - name: Run FastAPI server in background
       run: |
